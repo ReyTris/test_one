@@ -1,0 +1,8 @@
+mixin link(content, link, href)
+    if link == true
+        +b('a').link( href=`${href ? href : 'javascript:void(0);'}` title=`${content}` )&attributes( attributes ) #{content}
+            block
+
+    else
+        +b('button').button&attributes( attributes ) #{content}
+            block

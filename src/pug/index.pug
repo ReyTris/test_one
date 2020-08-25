@@ -1,0 +1,42 @@
+include ../../bemto-master/bemto.pug
+
+doctype html
+html(lang="ru-RU")
+head
+    block head
+    link(rel="stylesheet", href="static/css/style.css")
+    link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
+    title NoDrugs
+body
+    include ./layout/header.pug
+    include ./layout/footer.pug
+    include components/buttons.pug
+    
+    
+    +b.wrapper
+        //- .container
+        +header
+
+
+        block content
+        include components/slider.pug
+        include components/service.pug
+        include components/feedback.pug
+        include components/prices.pug
+        include components/advantages.pug
+
+        +slider-info
+        +slider-form
+        +service
+        +feedback
+        +advantages
+        +prices
+
+        +footer
+ 
+    script(src='static/js/libs.min.js')
+    script(src='static/js/headhesive.min.js')
+    script(src='static/js/main.js')
+
+
+

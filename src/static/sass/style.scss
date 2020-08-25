@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+
+}
+
+h1 {
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+p {
+    font-size: 18px;
+}
+
+td {
+    font-size: 18px;
+}
+
+
+.container {
+    margin: 0 auto;
+    width: 1110px;
+}
+
+
+@import 'advantages/advantages.scss';
+@import 'navbar/navbar.scss';
+@import 'prices/prices.scss';
+@import 'feedback/feedback.scss';
+@import 'footer/footer.scss';
+@import 'service/service.scss';
+@import 'form/form.scss';
+@import 'variables.scss';
+@import 'slider/slider.scss';
+@import 'social/social.scss';
+@import 'logo/logo.scss';
+@import 'header/header.scss';
+@import 'buttons/buttons.scss';
+@import 'libs.scss'

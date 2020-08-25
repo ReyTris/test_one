@@ -1,0 +1,32 @@
+.footer {
+    position: relative;
+    bottom: 0;
+    padding: 25px;
+    width: 100%;
+    background-color: #07385d;
+    color: white;
+    font-size: 20px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__block {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+
+        &:hover {
+            color: red;
+        }
+    }
+
+    .link--phone{
+        color: white;
+    }
+}

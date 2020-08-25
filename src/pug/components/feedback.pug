@@ -1,0 +1,15 @@
+mixin feedback()
+    include form.pug
+
+    +b.feedback
+        +e.item.feedback__item--ring
+            +form()
+        +e.item.feedback__item--review
+            +e('h2').title Отзывы
+            +e('p').item--review--text Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, reiciendis culpa? Perspiciatis, modi! Aspernatur amet neque voluptate adipisci, tempora voluptatem quidem consequuntur quibusdam perspiciatis, non numquam id exercitationem, quas repellendus in. Ab odio dolorem porro. Saepe consequuntur atque officia ad quod suscipit at dicta tempora placeat. Magni nemo nihil voluptas adipisci harum maxime, illo beatae laborum commodi error quae provident sequi pariatur fugiat quo dolores corporis rerum accusamus excepturi delectus reprehenderit? Ut quam omnis voluptatibus, esse beatae molestiae expedita nisi rerum sapiente est ab, asperiores ducimus odit, non vel? Autem fugiat reiciendis optio error! Quia pariatur fugiat tenetur quidem. Impedit.
+            +e('p').item--review--subtext Vasya
+        +e.item.feedback__item--work
+            +e('h2').title График
+            +e('p').item--work--text Клиника: пн-вс круглосуточно
+            +e('p').item--work--text Выезд на дом: круглосуточно
+            +e('p').item--work--text Работаем без перерывов и выходных

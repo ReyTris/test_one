@@ -1,0 +1,33 @@
+
+
+
+
+mixin header()
+    include ../components/buttons.pug
+    include ../components/logo.pug
+    include ../components/icon.pug
+    include ../components/navbar.pug
+    
+
+    +b.header
+        .container.container-header
+            +e.wrapper
+                +logo('http://google.com')
+                +e.button--block
+                    +link('Обратный звонок').button--header
+                    +link('Обратный звонок').button--header
+                +e.contact--block
+                    +link('+7999999999', true)(href="tel:+7999999999").link--phone 
+                    +link('+7999999999', true)(href="tel:+7999999999").link--phone 
+                    +b.social
+                        +e.icon--block
+                            +e('a')(href="http://instagram.com").link.social__link--instagram
+                                +icon('instagram')
+                                +e.text instagram.com
+                            +e('a')(href="http://facebook.com").link.social__link--instagram
+                                +icon('facebook') 
+                                +e.text facebook.com
+                            +e('a')(href="http://vkontakte.ru").link.social__link--instagram
+                                +icon('vk')
+                                +e.text vk.com
+        +navbar

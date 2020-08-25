@@ -1,0 +1,66 @@
+.feedback {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+
+    &__title {
+        text-align: center;
+    }
+
+    .feedback__item {
+        width: 33.33%;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        padding: 30px;
+
+        
+
+        &--ring {
+            background-color: rgba(237,241,254,1);
+        }
+
+        &--review {
+            background-color: rgba(111,150,235,1);
+            flex-direction: column;
+            justify-content: flex-start;
+
+            
+
+            &--subtext {
+                text-align: right;
+            }
+        }
+
+        &--work {
+            background-color: rgba(47,102,222,1);
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        .form {
+            &__wrapper {
+                margin: 0;
+                width: 500px;
+                max-width: 100%;
+                padding: 70px 30px;
+                background-color: transparent;
+            }
+
+            &__title {
+                color: black;
+            }
+
+            &__input {
+                height: 50px;
+            }
+
+            &__input--name {
+                margin-bottom: 30px;
+            }
+
+            &__input--phone {
+            }
+        }
+    }
+}

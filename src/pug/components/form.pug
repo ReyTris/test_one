@@ -1,0 +1,23 @@
+mixin form()
+
+    include buttons.pug
+
+    +b('form').form
+        +e.wrapper
+            +e.title Оставьте заявку
+            +e('input')(type="text" placeholder="имя").input--name.form__input
+            +e('input')(type="tel" placeholder="телефон").input--phone.form__input
+            +link('отправить заявку').button--form
+
+
+
+mixin form--feedback()
+
+    include buttons.pug
+
+    +b('form').form--feedback
+        +e.wrapper
+            +e('h2').title Оставьте заявку
+            +e('input')(type="text" placeholder="имя").input--name.form__input
+            +e('input')(type="tel" placeholder="телефон").input--phone.form__input
+            +link('отправить заявку').button--form

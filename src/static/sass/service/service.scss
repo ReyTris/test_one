@@ -1,0 +1,83 @@
+@import '../variables.scss';
+
+.service {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+
+
+
+    &__title {
+        text-transform: uppercase;
+    }
+
+    &__block {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        height: 400px;
+        width: 33%;
+        max-width: 400px;
+        margin-right: 0;
+        margin-bottom: 40px;
+        cursor: pointer;
+        // background-color: grey;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        position: relative;
+        perspective: 1000px;
+
+        &--front, &--back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-direction: column;
+            transition: 1s;
+            backface-visibility: hidden;
+            padding: 20px;
+        }
+
+        &--front {
+            background-color: grey;
+        }
+
+        &--back {
+            background-color: $dark-blue;
+            transform: rotateY(180deg);
+        }
+
+        &:hover .service__item--front {
+            transform: rotateY(180deg);
+            // background-color: #fff;
+            // transition: all 0.2s
+        }
+
+        &:hover .service__item--back {
+            transform: rotateY(360deg);
+        }
+
+        &--title {
+            margin-bottom: 20px;
+            font-size: 30px;
+        }
+
+        &--text {
+            margin-bottom: 30px;
+            font-size: 30px;
+        }
+
+        
+    }
+
+}

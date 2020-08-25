@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+.button {
+
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 30px;
+    height: 60px;
+    width: 250px;
+    background-color: $main-color;
+    border: none;
+
+    &:hover {
+        background-color: white;
+        color: $main-color;
+        border: 2px solid $main-color;
+        transition: 0.3s background-color;
+    }
+
+    &--header {
+        border-radius: 30px;
+        width: 250px;
+        height: 60px;
+        margin-right: 40px;
+        background-color: $main-color;
+        border: none;
+
+        &:last-child {
+            margin: 0;
+        }
+    }
+
+    &--form {
+        width: 300px;
+    }
+    
+}
