@@ -1,0 +1,25 @@
+.values {
+    
+    
+    background: url('../images/values3.png') 0 0 / 100% no-repeat;
+    
+    &__wrapper {
+        padding: 115px 0 0;
+        transform: skewY(-7.5deg);
+        
+    }
+
+    &__info {
+        transform: skewY(7.5deg);
+        text-align: center;
+        padding-bottom: 71px;
+
+
+        &--title {
+            text-transform: uppercase;
+            color: #1b4485;
+            margin-bottom: 13px;
+        }
+    }
+
+}
