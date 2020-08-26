@@ -17,13 +17,7 @@
 }
 
 
-
-.work {
-    padding: 50px 240px;
-    background-color: blue;
-    transform: skewY(-7.5deg);
-}
-
+@import 'work/work.scss';
 @import 'missions/missions.scss';
 @import 'footer/footer.scss';
 @import 'variables.scss';
