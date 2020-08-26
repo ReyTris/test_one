@@ -3,7 +3,9 @@ include ../../bemto-master/bemto.pug
 doctype html
 html(lang="ru-RU")
 head
-    block head
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     link(rel="stylesheet", href="static/css/style.css")
     link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN", crossorigin="anonymous")
     title NoDrugs
@@ -13,29 +15,30 @@ body
     include components/buttons.pug
     
     
-    +b.wrapper
-        //- .container
-        +header
+    +b.main
+        .container
+            //- +header
+
+            
+            +b.mission
+                +e.block
+                    +e.title Стратегическая цель компании
+                    +e.text Мы производим нашу продукцию, чтобы обеспечивать современное лечение и способствовать улучшению качества жизни пациентов и ее продолжительности.
+                +e.block
+                    +e.title Наша Миссия
+                    +e.text Здоровье – важнейшее и драгоценное сокровище человека. Более ста лет тому назад мы посвятили себя стремлению сохранить это сокровище.
+                            br
+                            |Объединяя наши знания, мы служим людям, чтобы сделать их жизнь долгой и здоровой. 
+
+            
+            +b.work
+
+            include components/slider.pug
 
 
-        block content
-        include components/slider.pug
-        include components/service.pug
-        include components/feedback.pug
-        include components/prices.pug
-        include components/advantages.pug
-
-        +slider-info
-        +slider-form
-        +service
-        +feedback
-        +advantages
-        +prices
-
-        +footer
- 
+            //- +footer
+    
     script(src='static/js/libs.min.js')
-    script(src='static/js/headhesive.min.js')
     script(src='static/js/main.js')
 
 

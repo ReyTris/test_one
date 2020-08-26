@@ -3,50 +3,31 @@
 
 }
 
-h1 {
-    font-size: 50px;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 40px;
-    text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-    margin: 0;
-}
-
-p {
-    font-size: 18px;
-}
-
-td {
-    font-size: 18px;
-}
 
 
 .container {
     margin: 0 auto;
-    width: 1110px;
+    min-width: 630px;
+    max-width: 1270px;
+    // padding: 0 30px;s
+}
+
+.normal__skew {
+    // transform: skewY(5deg);
 }
 
 
-@import 'advantages/advantages.scss';
-@import 'navbar/navbar.scss';
-@import 'prices/prices.scss';
-@import 'feedback/feedback.scss';
+
+.work {
+    padding: 50px 240px;
+    background-color: blue;
+    transform: skewY(-7.5deg);
+}
+
+@import 'missions/missions.scss';
 @import 'footer/footer.scss';
-@import 'service/service.scss';
-@import 'form/form.scss';
 @import 'variables.scss';
 @import 'slider/slider.scss';
-@import 'social/social.scss';
 @import 'logo/logo.scss';
 @import 'header/header.scss';
 @import 'buttons/buttons.scss';

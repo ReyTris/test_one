@@ -16,8 +16,3 @@ $(document).ready(function() {
 })
 
 // Для скролинга Хедера
-
-var options = {
-    offset: 400
-  }
-var header = new Headhesive('.header', options);
