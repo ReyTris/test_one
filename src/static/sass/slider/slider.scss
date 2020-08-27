@@ -91,3 +91,22 @@
 
     
 }
+
+
+@media (min-width: 1270px) {
+    .slider {
+        .slider__item {
+            padding-top: 10px;
+        }
+
+        .slick-prev {
+            left: -80px;
+            top: 72%;
+        }
+
+        .slick-next {
+            right: -65px;
+            top: 35%;
+        }
+    }
+}

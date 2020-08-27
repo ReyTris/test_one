@@ -67,3 +67,28 @@
         }
     }
 }
+
+@media (min-width: 1270px) {
+    .offer {
+        height: 908px;
+
+        &__wrapper {
+            padding: 74px 115px;
+        }
+
+        &__info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &--title {
+                font-size: 28px;
+                margin-bottom: 10px;
+            }
+
+            &--text {
+                width: 936px;
+                line-height: 21px;
+            }
+        }
+    }
+}
