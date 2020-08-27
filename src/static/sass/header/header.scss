@@ -38,3 +38,11 @@
         font-size: 14px;
     }
 }
+
+@media (min-width: 1270px) {
+    .header {
+        a {
+            font-size: 16px;
+        }
+    }
+}

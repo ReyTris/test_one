@@ -26,3 +26,22 @@
         color: white;
     }
 }
+
+@media (min-width: 1270px) {
+    .footer {
+        padding-top: 153px;
+        &__wrapper {
+            padding-bottom: 102px;
+        }
+
+        &__title {
+            font-size: 28px;
+        }
+
+        &__text {
+            max-width: 750px;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+}

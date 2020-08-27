@@ -90,5 +90,25 @@
                 line-height: 21px;
             }
         }
+
+        &__icon {
+            
+            margin-bottom: 14px;
+            &--image {
+                width: 127px;
+                height: 127px;
+
+                .icon {
+                    width: 58px;
+                }
+            }
+        }
+
+        &__item {
+            &--block {
+                
+                margin-right: 80px;
+            }
+        }
     }
 }

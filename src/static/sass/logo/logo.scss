@@ -6,3 +6,13 @@
     
     cursor: pointer;
 }
+
+@media (min-width: 1270px) {
+    .logo {
+        &__image {
+            width: 144px;
+            height: 76px;
+        }
+        
+    }
+}
