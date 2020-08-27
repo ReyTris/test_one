@@ -9,7 +9,7 @@
 
     &__title {
         margin-top: 30px;
-        margin-bottom: 7px;
+        margin-bottom: 21px;
         text-align: center;
         color: white;
     }
@@ -19,7 +19,7 @@
 
         &--block {
             width: 50%;
-            margin-right: 20px;
+            margin-right: 41px;
 
             &:nth-of-type(2n) {
                 margin-right: 0;
@@ -29,11 +29,17 @@
         &--title {
             text-transform: uppercase;
             color: #FFAE00;
+            margin-bottom: 13px;
         }
 
         
         &--text {
             color: white;
+            font-size: 14px;
+
+            li {
+                margin-bottom: 5px;
+            }
         }
     }
 }

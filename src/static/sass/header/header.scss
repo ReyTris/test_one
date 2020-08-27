@@ -2,28 +2,24 @@
 
 
 .header {
-    background-color: #fff;
-    height: 330px;
+    
+    // position: relative;
+    
+    // background-image: url('../images/header.png');
+    // background-repeat: no-repeat;
+    // background-size: 100%;
     transform: skewY(-7.5deg);
 
     &__wrapper {
-        position: relative;
-        // transform: skewY(-7.5deg);
+        transform: skewY(7.5deg);
+
+
+
 
         &--logo {
-            position: absolute;
             display: flex;
             align-items: center;
-            transform: skewY(7.5deg);
-            top: -10px;
-            z-index: 10;
-        }
-
-        &--main {
-            min-height: 383px;
-            background: url('../images/first__block.png') 0 0 / 100% no-repeat;
-            // background-size: cover;
-            transform: skewY(7.5deg);
+            justify-content: flex-start;
         }
 
     }
@@ -33,7 +29,12 @@
     }
 
     &__link {
+        margin-bottom: 10px;
+    }
+
+    a {
         text-decoration: none;
-        margin-top: 10px;
+        color: #1B4485;
+        font-size: 14px;
     }
 }

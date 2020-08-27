@@ -1,6 +1,9 @@
 * {
     box-sizing: border-box;
+}
 
+body {
+    overflow-x: hidden;
 }
 
 ul,li {
@@ -12,6 +15,7 @@ ul,li {
     margin: 0 auto;
     min-width: 630px;
     max-width: 1270px;
+    height: 100%;
     // padding: 0 30px;s
 }
 
@@ -22,6 +26,7 @@ ul,li {
     }
 
     h3 {
+        margin: 0;
         font-size: 16px;
     }
 
@@ -33,16 +38,19 @@ ul,li {
     
 }
 
-.normal__skew {
-    // transform: skewY(5deg);
+.index__block {
+    position: relative;
+    z-index: 20;
+    top: -100px;
 }
 
 
-
+@import 'two_block/two_block.scss';
 @import 'work/work.scss';
 @import 'values/values.scss';
 @import 'policy/policy.scss';
 @import 'missions/missions.scss';
+@import 'offer/offer.scss';
 @import 'footer/footer.scss';
 @import 'variables.scss';
 @import 'slider/slider.scss';

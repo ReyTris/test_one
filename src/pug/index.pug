@@ -15,14 +15,17 @@ body
     include components/buttons.pug
     
     
+    
     +b.main
         .container
 
             include components/work.pug
             include components/values.pug
             include components/policy.pug
-            //- +header
+            include components/offer.pug
 
+
+            +header
             
             +b.mission
                 +e.wrapper
@@ -41,9 +44,9 @@ body
             +work
             +values
             +policy
+            +offer
 
-
-            //- +footer
+            +footer
     
     script(src='static/js/libs.min.js')
     script(src='static/js/main.js')

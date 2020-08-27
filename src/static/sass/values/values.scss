@@ -12,6 +12,9 @@
     &__info {
         transform: skewY(7.5deg);
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding-bottom: 71px;
 
 
@@ -22,6 +25,7 @@
         }
 
         &--text {
+            max-width: 567px;
             padding: 0 19px;
         }
 
