@@ -3,6 +3,7 @@
     padding: 22px 19px 0;
     // background-color: red;
     transform: skewY(-7.5deg);
+    margin-bottom: -22px;
 
     &__info {
         text-align: center;
@@ -83,6 +84,7 @@
 
 @media (min-width: 1270px) {
     .work {
+        margin-bottom: 0;
         &__wrapper {
             padding-top: 87px;
         }
@@ -96,6 +98,7 @@
             &--text {
                 font-size: 16px;
                 margin-bottom: 55px;
+                max-width: 742px;
             }
         }
 
@@ -130,6 +133,8 @@
         &__icon--wrapper {
             width: 139px;
             height: 138px;
+            margin-bottom: 10px;
+            margin-right: 0;
 
             .icon {
                 height: 66px;

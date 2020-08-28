@@ -1,4 +1,26 @@
+@font-face {
+    font-family: 'Trebuchet MS Regular';
+    src: url('./fonts/TrebuchetMS.eot');
+    src:
+        url('./fonts/TrebuchetMS.woff') format('woff'),
+        url('./fonts/TrebuchetMS.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
+    font-family: 'Trebuchet MS Bold';
+    src: url('./fonts/TrebuchetMS-Bold.eot');
+    src:
+        url('./fonts/TrebuchetMS-Bold.woff') format('woff'),
+        url('./fonts/TrebuchetMS-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
 * {
+    font-family: 'Trebuchet MS Regular';
     box-sizing: border-box;
 }
 
@@ -9,6 +31,10 @@ body {
 ul,li {
     list-style: none;
     padding: 0;
+}
+
+h2,h3{
+    font-weight: 700;
 }
 
 .container {
